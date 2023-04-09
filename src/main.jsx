@@ -7,7 +7,9 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <NotesProvider>
-      <App/>
+      <BrowserRouter basename="/notes-webapp/">
+        <App />
+      </BrowserRouter>
     </NotesProvider>
   </React.StrictMode>
 );
