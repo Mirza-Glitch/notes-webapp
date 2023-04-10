@@ -27,7 +27,9 @@ const router = createBrowserRouter([
     path: "/edit/:noteId",
     element: <AddNote />,
   },
-]);
+], {
+  basename: "/notes-webapp",
+});
 
 function App() {
   return <RouterProvider router={router} />;
